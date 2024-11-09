@@ -9,10 +9,9 @@ Original file is located at
 
 import pandas as pd
 import streamlit as st
-from google.colab import files
-uploaded = files.upload("TrafficDataset.csv") #uploaded as a dictionary
+data = pd.read_csv("TrafficDataset.csv") #uploaded as a dictionary
 
-data = pd.read_csv(list(uploaded.keys())[0]) #converting data into a dataframe
+#data = pd.read_csv(list(uploaded.keys())[0]) #converting data into a dataframe
 data.head()
 
 data = data.dropna() #remove all the rows with NA values (in this case, there are no NA values in the original dataset)

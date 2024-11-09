@@ -9,6 +9,7 @@ Original file is located at
 
 import pandas as pd
 import streamlit as st
+import sklearn
 data = pd.read_csv("TrafficDataset.csv") #uploaded as a dictionary
 
 #data = pd.read_csv(list(uploaded.keys())[0]) #converting data into a dataframe
